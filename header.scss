@@ -1,0 +1,130 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 3px #000;
+    z-index: 20;
+}
+.header__wrapper {
+    display:flex;
+    height:60px;
+    align-items:center;
+    justify-content: space-between;
+    padding:0 16px;
+}
+.header__start {
+    display:flex;
+    align-items: center;
+    height: 40px;
+    line-height: 40px;
+    button {
+        border:none;
+        background-color: transparent;
+        font-size:1.5rem;
+    }
+    div i {
+        font-size:1.7rem;
+        padding-left: 40px;
+    }
+    span {
+       font-size:1.2rem;
+        margin:4px;
+    }
+}
+.header__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    span {
+        display:flex;
+        font-size:10px;
+        position:absolute;
+        margin-left:82px;
+        margin-bottom:22px;
+        color: rgba(0,0,0,0.5);
+        font-weight: 600;
+    }
+}
+
+.header__center {
+    width:50%;
+}
+.header__form {
+    display:flex;
+    max-width: 100%;
+    .header__input--text {
+        width: calc(100% - 60px);
+        padding:0 6px;
+        border: 1px solid #8f8f8f;
+        border-right:none;
+        border-radius: 2px 0 0 2px;
+    }
+    .header__input--btn {
+        width: 60px;
+        height:40px;
+        border: 1px solid #8f8f8f;
+        border-left:none;
+        border-radius: 0 2px 2px 0;
+    }
+}
+.header__center--rightside {
+    display:flex;
+    .header__input--voice {
+        border: 1px solid #8f8f8f;
+        background-color: #F0F1F3;
+        border-radius:50%;
+        font-size:1rem;
+        padding:10px;
+    }
+}
+.header__end {
+    display:flex;
+    .header__search{
+        border:none;
+        background-color: transparent;
+        font-size:1.5rem;
+        display:none;
+        margin-right:5px;
+    }
+    .header__camera{
+        border:none;
+        background-color: transparent;
+        font-size:1.2rem;
+    }
+    .header__bell{
+        border:none;
+        background-color: transparent;
+        font-size:1.2rem;
+    }
+    .header__profile img{
+        width:40px;
+        height:40px;
+        border:1px solid #eaeaea;
+        border-radius:50%
+        //background-image:url(../imgs/thumnail.jpg);
+        //background-size: 40px 40px;
+    }
+}
+.header__end button {
+    padding:0 16px;
+}
+.header__end div {
+    margin-left:16px;
+}
+// @media screen and (max-width: 800px) {
+//     .header__logo,
+//     .header__title {
+//         display:none;
+//     }
+// }
+
+@media screen and (max-width: 600px) {
+    .header__center {
+        display:none;
+    }
+    .header__end .header__search {
+        display:block;
+    }
+}

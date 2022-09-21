@@ -14,7 +14,10 @@
         <div class="header__wrapper">
             <h1 class="header__start">
                 <button class="header__hamburger"><i class="fa-solid fa-bars"></i></button>
-                <span class="header__title">SomTube</span>
+                <div class="header__logo"><i class="fa-brands fa-youtube fa-xl"></i></div>
+                <span class="header__title">SomTube
+                    <span class="header__title--country">KR</span>
+                </span>
             </h1>
             <div class="header__center">
                 <form class="header__form" onsubmit="return false;"> <!--onsubmit="return false;는 form에서 버튼을 눌렀을때 
@@ -23,9 +26,14 @@
                     <button class="header__input--btn">검색</button>
                 </form>
             </div>
+            <div class="header__center--rightside">
+                <div class="header__input--voice"><i class="fa-solid fa-microphone fa-lg"></i></div>
+            </div>
             <div class="header__end">
                 <button class="header__search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-                <div class="header__profile"></div>
+                <button class="header__camera"><i class="fa-solid fa-video"></i></button>
+                <button class="header__bell"><i class="fa-regular fa-bell"></i></button>
+                <div class="header__profile"><img src="imgs/thumnail.jpg"></div>
             </div>
         </div>
     </header>
