@@ -1,3 +1,5 @@
+@import "nav.css";
+@import "section.css";
 .header {
   position: fixed;
   top: 0;
@@ -58,6 +60,8 @@
 .header__form {
   display: flex;
   max-width: 100%;
+  margin-right: 25px;
+  margin-left: 10px;
 }
 .header__form .header__input--text {
   width: calc(100% - 60px);
@@ -126,5 +130,8 @@
   }
   .header__end .header__search {
     display: block;
+  }
+  .header__input--voice {
+    display: none;
   }
 }/*# sourceMappingURL=header.css.map */
